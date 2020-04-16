@@ -20,6 +20,17 @@
 
 ![demo](https://i.ibb.co/Ln32F4B/arjun-demo.png)
 
+### The Improvment
+
+Wonder what's modified in this Arjun version?
+
+Simple, nowdays many platforms uses Javascript for their frontends, and usually they stores those in Javascript Arrays.
+
+This Arjun version grabs variable names from strings like {"name":"value"}. Lately I got MANY injections from GET/POST/Cookies scraping those, and later escaping with </script>. 
+This happened me in many programs including big ones like PayPal, Yahoo, etc and this little trick helped me a lot.
+When you are fuzzing a no response go dictionary fuzzing, but if its a responding website this heuristic technique usually is faster and better.
+
+
 ### Introduction
 Web applications use parameters (or queries) to accept user input, take the following example into consideration
 
