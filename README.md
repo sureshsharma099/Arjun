@@ -24,7 +24,7 @@
 
 Wonder what's modified in this Arjun version?
 
-Simple, nowdays many platforms uses Javascript for their frontends, and usually they stores those in Javascript Arrays.
+Simple, nowdays many platforms uses Javascript for their frontends, and usually they stores those interesting parameters in Javascript Arrays.
 
 This Arjun version grabs variable names from strings like {"name":"value"}. Lately I got MANY injections from GET/POST/Cookies scraping those, and later escaping with </script>. 
 This happened me in many programs including big ones like PayPal, Yahoo, etc and this little trick helped me a lot.
