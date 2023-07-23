@@ -17,9 +17,9 @@ def requester(url, data, headers, GET, delay):
     time.sleep(delay)
     headers['Host'] = re.search(r'https?://([^/]+)', url).group(1)
     if GET:
-        response = requests.get(url, params=data, headers=headers, verify=False)
+        response = requests.get(url, params=data, headers=headers, verify=False, allow_redirects=False, timeout=10)
     elif core.config.globalVariables['jsonData']:
-        response = requests.post(url, json=data, headers=headers, verify=False)
+        response = requests.post(url, json=data, headers=headers, verify=False, allow_redirects=False, timeout=10)
     else:
-        response = requests.post(url, data=data, headers=headers, verify=False)
+        response = requests.post(url, data=data, headers=headers, verify=False, allow_redirects=False, timeout=10)
     return response
