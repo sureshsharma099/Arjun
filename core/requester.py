@@ -7,6 +7,9 @@ import requests
 
 import core.config
 
+from requests.packages import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
 warnings.filterwarnings('ignore') # Disable SSL related warnings
 
 def requester(url, data, headers, GET, delay):
